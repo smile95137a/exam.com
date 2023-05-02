@@ -12,15 +12,15 @@ public class Article {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	@Column(name = "title")
-	private String Title;
+	private String title;
 	@Column(name = "start_date")
-	private Date StartDate;
+	private Date startDate;
 	@Column(name = "end_date")
-	private Date EndDate;
+	private Date endDate;
 	@Column(name = "author")
-	private String Author;
+	private String author;
 	@Column(name = "context")
-	private String Context;
+	private String context;
 
 	public Integer getId() {
 		return id;
@@ -31,43 +31,43 @@ public class Article {
 	}
 
 	public String getTitle() {
-		return Title;
+		return title;
 	}
 
 	public void setTitle(String title) {
-		Title = title;
+		this.title = title;
 	}
 
 	public Date getStartDate() {
-		return StartDate;
+		return startDate;
 	}
 
 	public void setStartDate(Date startDate) {
-		StartDate = startDate;
+		this.startDate = startDate;
 	}
 
 	public Date getEndDate() {
-		return EndDate;
+		return endDate;
 	}
 
 	public void setEndDate(Date endDate) {
-		EndDate = endDate;
+		this.endDate = endDate;
 	}
 
 	public String getAuthor() {
-		return Author;
+		return author;
 	}
 
 	public void setAuthor(String author) {
-		Author = author;
+		this.author = author;
 	}
 
 	public String getContext() {
-		return Context;
+		return context;
 	}
 
 	public void setContext(String context) {
-		Context = context;
+		this.context = context;
 	}
 
 }

@@ -16,11 +16,11 @@ public class Board {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	@Column(name = "title")
-	private String Title;
+	private String title;
 	@Column(name = "start_date")
-	private Date StartDate;
+	private Date startDate;
 	@Column(name = "end_date")
-	private Date EndDate;
+	private Date endDate;
 
 	public Integer getId() {
 		return id;
@@ -31,27 +31,28 @@ public class Board {
 	}
 
 	public String getTitle() {
-		return Title;
+		return title;
 	}
 
 	public void setTitle(String title) {
-		Title = title;
+		this.title = title;
 	}
 
 	public Date getStartDate() {
-		return StartDate;
+		return startDate;
 	}
 
 	public void setStartDate(Date startDate) {
-		StartDate = startDate;
+		this.startDate = startDate;
 	}
 
 	public Date getEndDate() {
-		return EndDate;
+		return endDate;
 	}
 
 	public void setEndDate(Date endDate) {
-		EndDate = endDate;
+		this.endDate = endDate;
 	}
+
 
 }
