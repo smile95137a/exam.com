@@ -23,7 +23,7 @@
 		</property>
 		<property name="packagesToScan">
 			<list>
-				<value>camiol.demo.entity</value>
+				<value>exam.com.entity</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

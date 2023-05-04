@@ -10,24 +10,29 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Board")
+@Table(name = "board")
 public class Board {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
+	@Column(name = "board_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer boardId;
 	@Column(name = "title")
 	private String title;
 	@Column(name = "start_date")
 	private Date startDate;
 	@Column(name = "end_date")
 	private Date endDate;
+	@Column(name = "author")
+	private String author;
+	@Column(name = "context")
+	private String context;
 
-	public Integer getId() {
-		return id;
+	public Integer getBoardId() {
+		return boardId;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setBoardId(Integer boardId) {
+		this.boardId = boardId;
 	}
 
 	public String getTitle() {
@@ -54,5 +59,20 @@ public class Board {
 		this.endDate = endDate;
 	}
 
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getContext() {
+		return context;
+	}
+
+	public void setContext(String context) {
+		this.context = context;
+	}
 
 }
